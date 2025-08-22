@@ -9,6 +9,15 @@ body {
     flex-direction: column;
 }
 
+h2 {
+    margin: 8px 0px;
+    font-weight: bolder;
+}
+
+h2 span {
+    font-weight: 100;
+}
+
 img {
     width: 200px;
     height: 200px;
@@ -17,23 +26,83 @@ img {
 }
 
 .container {
-    background-color:cadetblue;
+    background-color:rgb(59, 99, 100);
     text-align: center;
-    padding: 0px;
+    padding: 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+    max-width: 600px;
+    margin: 5px auto;
 
 }
 
 .container .description {
     font-size: 15px;
+    text-align: justify;
+}
+
+.container .desc-closing {
     text-align: center;
+}
+
+.container .bio span {
+    color: #222 ;
+    border-bottom: 2px solid #222;
+}
+
+.container .bio span:hover{
+    color: whitesmoke    ;
 }
 
 a {
     text-decoration: none;
-    color: #0000EE;
+    color: white;
+    background: #222;
+    padding: 5px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+a:hover {
+    background: #333;
 }
 
 .footer {
-    margin: 50px;
+    margin: 5px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 749px) {
+    body {
+        padding: 10px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container {
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .container .description {
+        font-size: 14px;
+    }
+
+    .container .desc-closing {
+        font-size: 14px;
+    }
+
+    a {
+        display: block;
+        margin: 8px auto;
+        width: fit-content;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
 }
